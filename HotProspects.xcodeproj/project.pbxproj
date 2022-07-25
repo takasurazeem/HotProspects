@@ -29,6 +29,8 @@
 		F99B4BDA288EC4E400598B53 /* SPMContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BD9288EC4E400598B53 /* SPMContentView.swift */; };
 		F99B4BDC288EC7D000598B53 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BDB288EC7D000598B53 /* ProspectsView.swift */; };
 		F99B4BDE288EC7D700598B53 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BDD288EC7D700598B53 /* MeView.swift */; };
+		F99B4BE0288ED31D00598B53 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BDF288ED31D00598B53 /* Prospect.swift */; };
+		F99B4BE2288ED32B00598B53 /* Prospects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BE1288ED32B00598B53 /* Prospects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		F99B4BD9288EC4E400598B53 /* SPMContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMContentView.swift; sourceTree = "<group>"; };
 		F99B4BDB288EC7D000598B53 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		F99B4BDD288EC7D700598B53 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		F99B4BDF288ED31D00598B53 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		F99B4BE1288ED32B00598B53 /* Prospects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				F99B4B8C288C6B5100598B53 /* ContentView.swift */,
 				F99B4BDB288EC7D000598B53 /* ProspectsView.swift */,
 				F99B4BDD288EC7D700598B53 /* MeView.swift */,
+				F99B4BDF288ED31D00598B53 /* Prospect.swift */,
+				F99B4BE1288ED32B00598B53 /* Prospects.swift */,
 				F99B4B8E288C6B5300598B53 /* Assets.xcassets */,
 				F99B4B90288C6B5300598B53 /* Preview Content */,
 			);
@@ -390,9 +396,11 @@
 				F99B4BC3288E75A600598B53 /* DelayedUpdater.swift in Sources */,
 				F99B4BCB288EAA0D00598B53 /* ImageInterpolationContentView.swift in Sources */,
 				F99B4BC8288E77D800598B53 /* ResultTypeContentView.swift in Sources */,
+				F99B4BE2288ED32B00598B53 /* Prospects.swift in Sources */,
 				F99B4BC0288D25FA00598B53 /* TabViewLearning.swift in Sources */,
 				F99B4BDE288EC7D700598B53 /* MeView.swift in Sources */,
 				F99B4BBA288D225600598B53 /* User.swift in Sources */,
+				F99B4BE0288ED31D00598B53 /* Prospect.swift in Sources */,
 				F99B4BDA288EC4E400598B53 /* SPMContentView.swift in Sources */,
 				F99B4B8D288C6B5100598B53 /* ContentView.swift in Sources */,
 				F99B4BCE288EABF900598B53 /* ContextMenuContentView.swift in Sources */,
