@@ -17,6 +17,7 @@
 		F99B4BB8288D223D00598B53 /* EnvironmentObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BB7288D223D00598B53 /* EnvironmentObjectView.swift */; };
 		F99B4BBA288D225600598B53 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BB9288D225600598B53 /* User.swift */; };
 		F99B4BBD288D230A00598B53 /* Display+EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BBC288D230A00598B53 /* Display+EditView.swift */; };
+		F99B4BC0288D25FA00598B53 /* TabViewLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BBF288D25FA00598B53 /* TabViewLearning.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		F99B4BB7288D223D00598B53 /* EnvironmentObjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectView.swift; sourceTree = "<group>"; };
 		F99B4BB9288D225600598B53 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F99B4BBC288D230A00598B53 /* Display+EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Display+EditView.swift"; sourceTree = "<group>"; };
+		F99B4BBF288D25FA00598B53 /* TabViewLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewLearning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		F99B4BB6288D220900598B53 /* Learning */ = {
 			isa = PBXGroup;
 			children = (
+				F99B4BBE288D25D300598B53 /* TabView */,
 				F99B4BBB288D22CB00598B53 /* EnvironmentObject */,
 			);
 			path = Learning;
@@ -150,6 +153,14 @@
 				F99B4BBC288D230A00598B53 /* Display+EditView.swift */,
 			);
 			path = EnvironmentObject;
+			sourceTree = "<group>";
+		};
+		F99B4BBE288D25D300598B53 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				F99B4BBF288D25FA00598B53 /* TabViewLearning.swift */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99B4BC0288D25FA00598B53 /* TabViewLearning.swift in Sources */,
 				F99B4BBA288D225600598B53 /* User.swift in Sources */,
 				F99B4B8D288C6B5100598B53 /* ContentView.swift in Sources */,
 				F99B4B8B288C6B5100598B53 /* HotProspectsApp.swift in Sources */,
@@ -442,9 +454,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HotProspects/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -459,6 +472,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.takasurazeem.HotProspects;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,9 +484,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HotProspects/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -487,6 +502,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.takasurazeem.HotProspects;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
