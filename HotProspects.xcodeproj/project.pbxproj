@@ -22,6 +22,7 @@
 		F99B4BC5288E768600598B53 /* DelayedUpdaterContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BC4288E768600598B53 /* DelayedUpdaterContentView.swift */; };
 		F99B4BC8288E77D800598B53 /* ResultTypeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BC7288E77D800598B53 /* ResultTypeContentView.swift */; };
 		F99B4BCB288EAA0D00598B53 /* ImageInterpolationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BCA288EAA0D00598B53 /* ImageInterpolationContentView.swift */; };
+		F99B4BCE288EABF900598B53 /* ContextMenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BCD288EABF900598B53 /* ContextMenuContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		F99B4BC4288E768600598B53 /* DelayedUpdaterContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedUpdaterContentView.swift; sourceTree = "<group>"; };
 		F99B4BC7288E77D800598B53 /* ResultTypeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTypeContentView.swift; sourceTree = "<group>"; };
 		F99B4BCA288EAA0D00598B53 /* ImageInterpolationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterpolationContentView.swift; sourceTree = "<group>"; };
+		F99B4BCD288EABF900598B53 /* ContextMenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		F99B4BB6288D220900598B53 /* Learning */ = {
 			isa = PBXGroup;
 			children = (
+				F99B4BCC288EABF100598B53 /* ContextMenu */,
 				F99B4BC9288EAA0100598B53 /* ImageInterpolation  */,
 				F99B4BC6288E77CB00598B53 /* ResultType */,
 				F99B4BC1288E757F00598B53 /* Manually Publishing */,
@@ -197,6 +200,14 @@
 				F99B4BCA288EAA0D00598B53 /* ImageInterpolationContentView.swift */,
 			);
 			path = "ImageInterpolation ";
+			sourceTree = "<group>";
+		};
+		F99B4BCC288EABF100598B53 /* ContextMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F99B4BCD288EABF900598B53 /* ContextMenuContentView.swift */,
+			);
+			path = ContextMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +346,7 @@
 				F99B4BC0288D25FA00598B53 /* TabViewLearning.swift in Sources */,
 				F99B4BBA288D225600598B53 /* User.swift in Sources */,
 				F99B4B8D288C6B5100598B53 /* ContentView.swift in Sources */,
+				F99B4BCE288EABF900598B53 /* ContextMenuContentView.swift in Sources */,
 				F99B4B8B288C6B5100598B53 /* HotProspectsApp.swift in Sources */,
 				F99B4BC5288E768600598B53 /* DelayedUpdaterContentView.swift in Sources */,
 				F99B4BBD288D230A00598B53 /* Display+EditView.swift in Sources */,
