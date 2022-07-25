@@ -31,6 +31,7 @@
 		F99B4BDE288EC7D700598B53 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BDD288EC7D700598B53 /* MeView.swift */; };
 		F99B4BE0288ED31D00598B53 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BDF288ED31D00598B53 /* Prospect.swift */; };
 		F99B4BE2288ED32B00598B53 /* Prospects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BE1288ED32B00598B53 /* Prospects.swift */; };
+		F99B4BE5288EECA800598B53 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = F99B4BE4288EECA800598B53 /* CodeScanner */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99B4BE5288EECA800598B53 /* CodeScanner in Frameworks */,
 				F99B4BD7288EC46F00598B53 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +277,7 @@
 			name = HotProspects;
 			packageProductDependencies = (
 				F99B4BD6288EC46F00598B53 /* SamplePackage */,
+				F99B4BE4288EECA800598B53 /* CodeScanner */,
 			);
 			productName = HotProspects;
 			productReference = F99B4B87288C6B5100598B53 /* HotProspects.app */;
@@ -350,6 +353,7 @@
 			mainGroup = F99B4B7E288C6B5100598B53;
 			packageReferences = (
 				F99B4BD5288EC46F00598B53 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+				F99B4BE3288EECA700598B53 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = F99B4B88288C6B5100598B53 /* Products */;
 			projectDirPath = "";
@@ -566,12 +570,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HotProspects/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = E2D87XL9X7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -596,12 +602,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HotProspects/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = E2D87XL9X7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -743,6 +751,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		F99B4BE3288EECA700598B53 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -750,6 +766,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F99B4BD5288EC46F00598B53 /* XCRemoteSwiftPackageReference "SamplePackage" */;
 			productName = SamplePackage;
+		};
+		F99B4BE4288EECA800598B53 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F99B4BE3288EECA700598B53 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
