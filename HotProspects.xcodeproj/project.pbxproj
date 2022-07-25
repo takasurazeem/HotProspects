@@ -20,6 +20,7 @@
 		F99B4BC0288D25FA00598B53 /* TabViewLearning.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BBF288D25FA00598B53 /* TabViewLearning.swift */; };
 		F99B4BC3288E75A600598B53 /* DelayedUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BC2288E75A600598B53 /* DelayedUpdater.swift */; };
 		F99B4BC5288E768600598B53 /* DelayedUpdaterContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BC4288E768600598B53 /* DelayedUpdaterContentView.swift */; };
+		F99B4BC8288E77D800598B53 /* ResultTypeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BC7288E77D800598B53 /* ResultTypeContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		F99B4BBF288D25FA00598B53 /* TabViewLearning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewLearning.swift; sourceTree = "<group>"; };
 		F99B4BC2288E75A600598B53 /* DelayedUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedUpdater.swift; sourceTree = "<group>"; };
 		F99B4BC4288E768600598B53 /* DelayedUpdaterContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedUpdaterContentView.swift; sourceTree = "<group>"; };
+		F99B4BC7288E77D800598B53 /* ResultTypeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTypeContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		F99B4BB6288D220900598B53 /* Learning */ = {
 			isa = PBXGroup;
 			children = (
+				F99B4BC6288E77CB00598B53 /* ResultType */,
 				F99B4BC1288E757F00598B53 /* Manually Publishing */,
 				F99B4BBE288D25D300598B53 /* TabView */,
 				F99B4BBB288D22CB00598B53 /* EnvironmentObject */,
@@ -175,6 +178,14 @@
 				F99B4BC4288E768600598B53 /* DelayedUpdaterContentView.swift */,
 			);
 			path = "Manually Publishing";
+			sourceTree = "<group>";
+		};
+		F99B4BC6288E77CB00598B53 /* ResultType */ = {
+			isa = PBXGroup;
+			children = (
+				F99B4BC7288E77D800598B53 /* ResultTypeContentView.swift */,
+			);
+			path = ResultType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F99B4BC3288E75A600598B53 /* DelayedUpdater.swift in Sources */,
+				F99B4BC8288E77D800598B53 /* ResultTypeContentView.swift in Sources */,
 				F99B4BC0288D25FA00598B53 /* TabViewLearning.swift in Sources */,
 				F99B4BBA288D225600598B53 /* User.swift in Sources */,
 				F99B4B8D288C6B5100598B53 /* ContentView.swift in Sources */,
