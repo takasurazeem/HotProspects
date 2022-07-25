@@ -27,6 +27,8 @@
 		F99B4BD4288EBF6100598B53 /* LocalNotificationsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BD3288EBF6100598B53 /* LocalNotificationsContentView.swift */; };
 		F99B4BD7288EC46F00598B53 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = F99B4BD6288EC46F00598B53 /* SamplePackage */; };
 		F99B4BDA288EC4E400598B53 /* SPMContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BD9288EC4E400598B53 /* SPMContentView.swift */; };
+		F99B4BDC288EC7D000598B53 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BDB288EC7D000598B53 /* ProspectsView.swift */; };
+		F99B4BDE288EC7D700598B53 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BDD288EC7D700598B53 /* MeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		F99B4BD0288EBDCB00598B53 /* CustomRowSwipeActionsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRowSwipeActionsContentView.swift; sourceTree = "<group>"; };
 		F99B4BD3288EBF6100598B53 /* LocalNotificationsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsContentView.swift; sourceTree = "<group>"; };
 		F99B4BD9288EC4E400598B53 /* SPMContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMContentView.swift; sourceTree = "<group>"; };
+		F99B4BDB288EC7D000598B53 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
+		F99B4BDD288EC7D700598B53 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				F99B4BB6288D220900598B53 /* Learning */,
 				F99B4B8A288C6B5100598B53 /* HotProspectsApp.swift */,
 				F99B4B8C288C6B5100598B53 /* ContentView.swift */,
+				F99B4BDB288EC7D000598B53 /* ProspectsView.swift */,
+				F99B4BDD288EC7D700598B53 /* MeView.swift */,
 				F99B4B8E288C6B5300598B53 /* Assets.xcassets */,
 				F99B4B90288C6B5300598B53 /* Preview Content */,
 			);
@@ -385,6 +391,7 @@
 				F99B4BCB288EAA0D00598B53 /* ImageInterpolationContentView.swift in Sources */,
 				F99B4BC8288E77D800598B53 /* ResultTypeContentView.swift in Sources */,
 				F99B4BC0288D25FA00598B53 /* TabViewLearning.swift in Sources */,
+				F99B4BDE288EC7D700598B53 /* MeView.swift in Sources */,
 				F99B4BBA288D225600598B53 /* User.swift in Sources */,
 				F99B4BDA288EC4E400598B53 /* SPMContentView.swift in Sources */,
 				F99B4B8D288C6B5100598B53 /* ContentView.swift in Sources */,
@@ -393,6 +400,7 @@
 				F99B4BC5288E768600598B53 /* DelayedUpdaterContentView.swift in Sources */,
 				F99B4BBD288D230A00598B53 /* Display+EditView.swift in Sources */,
 				F99B4BD4288EBF6100598B53 /* LocalNotificationsContentView.swift in Sources */,
+				F99B4BDC288EC7D000598B53 /* ProspectsView.swift in Sources */,
 				F99B4BB8288D223D00598B53 /* EnvironmentObjectView.swift in Sources */,
 				F99B4BD1288EBDCB00598B53 /* CustomRowSwipeActionsContentView.swift in Sources */,
 			);
