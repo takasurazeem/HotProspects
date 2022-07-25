@@ -25,6 +25,8 @@
 		F99B4BCE288EABF900598B53 /* ContextMenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BCD288EABF900598B53 /* ContextMenuContentView.swift */; };
 		F99B4BD1288EBDCB00598B53 /* CustomRowSwipeActionsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BD0288EBDCB00598B53 /* CustomRowSwipeActionsContentView.swift */; };
 		F99B4BD4288EBF6100598B53 /* LocalNotificationsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BD3288EBF6100598B53 /* LocalNotificationsContentView.swift */; };
+		F99B4BD7288EC46F00598B53 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = F99B4BD6288EC46F00598B53 /* SamplePackage */; };
+		F99B4BDA288EC4E400598B53 /* SPMContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BD9288EC4E400598B53 /* SPMContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,7 @@
 		F99B4BCD288EABF900598B53 /* ContextMenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuContentView.swift; sourceTree = "<group>"; };
 		F99B4BD0288EBDCB00598B53 /* CustomRowSwipeActionsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRowSwipeActionsContentView.swift; sourceTree = "<group>"; };
 		F99B4BD3288EBF6100598B53 /* LocalNotificationsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsContentView.swift; sourceTree = "<group>"; };
+		F99B4BD9288EC4E400598B53 /* SPMContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99B4BD7288EC46F00598B53 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +157,7 @@
 		F99B4BB6288D220900598B53 /* Learning */ = {
 			isa = PBXGroup;
 			children = (
+				F99B4BD8288EC4D800598B53 /* SPM */,
 				F99B4BD2288EBF4F00598B53 /* LocalNotifications  */,
 				F99B4BCF288EBDBA00598B53 /* CustomRowSwipeActions */,
 				F99B4BCC288EABF100598B53 /* ContextMenu */,
@@ -232,6 +237,14 @@
 			path = "LocalNotifications ";
 			sourceTree = "<group>";
 		};
+		F99B4BD8288EC4D800598B53 /* SPM */ = {
+			isa = PBXGroup;
+			children = (
+				F99B4BD9288EC4E400598B53 /* SPMContentView.swift */,
+			);
+			path = SPM;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,6 +261,9 @@
 			dependencies = (
 			);
 			name = HotProspects;
+			packageProductDependencies = (
+				F99B4BD6288EC46F00598B53 /* SamplePackage */,
+			);
 			productName = HotProspects;
 			productReference = F99B4B87288C6B5100598B53 /* HotProspects.app */;
 			productType = "com.apple.product-type.application";
@@ -320,6 +336,9 @@
 				Base,
 			);
 			mainGroup = F99B4B7E288C6B5100598B53;
+			packageReferences = (
+				F99B4BD5288EC46F00598B53 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+			);
 			productRefGroup = F99B4B88288C6B5100598B53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -367,6 +386,7 @@
 				F99B4BC8288E77D800598B53 /* ResultTypeContentView.swift in Sources */,
 				F99B4BC0288D25FA00598B53 /* TabViewLearning.swift in Sources */,
 				F99B4BBA288D225600598B53 /* User.swift in Sources */,
+				F99B4BDA288EC4E400598B53 /* SPMContentView.swift in Sources */,
 				F99B4B8D288C6B5100598B53 /* ContentView.swift in Sources */,
 				F99B4BCE288EABF900598B53 /* ContextMenuContentView.swift in Sources */,
 				F99B4B8B288C6B5100598B53 /* HotProspectsApp.swift in Sources */,
@@ -697,6 +717,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F99B4BD5288EC46F00598B53 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F99B4BD6288EC46F00598B53 /* SamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F99B4BD5288EC46F00598B53 /* XCRemoteSwiftPackageReference "SamplePackage" */;
+			productName = SamplePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F99B4B7F288C6B5100598B53 /* Project object */;
 }
