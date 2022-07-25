@@ -26,22 +26,42 @@ struct ProspectsView: View {
         }
     }
     
+    var filteredProspects: [Prospect] {
+        switch filter {
+        case .none:
+            return prospects.people
+        case .contacted:
+            return prospects.people.filter { $0.isContacted }
+        case .uncontacted:
+            return prospects.people.filter { !$0.isContacted }
+        }
+    }
+    
     @EnvironmentObject var prospects: Prospects
     
     var body: some View {
         NavigationView {
-            Text("Peopple: \(prospects.people.count)")
-                .navigationTitle(title)
-                .toolbar {
-                    Button {
-                        let prospect = Prospect()
-                        prospect.name = "Takasur Azeem"
-                        prospect.emailAddress = "takasurazeem@gmail.com"
-                        prospects.people.append(prospect)
-                    } label: {
-                        Label("Scan", systemImage: "qrcode.viewfinder")
+            List {
+                ForEach(filteredProspects) { prospect in
+                    VStack(alignment: .leading) {
+                        Text(prospect.name)
+                            .font(.headline)
+                        Text(prospect.emailAddress)
+                            .foregroundColor(.secondary)
                     }
                 }
+            }
+            .navigationTitle(title)
+            .toolbar {
+                Button {
+                    let prospect = Prospect()
+                    prospect.name = "Takasur Azeem"
+                    prospect.emailAddress = "takasurazeem@gmail.com"
+                    prospects.people.append(prospect)
+                } label: {
+                    Label("Scan", systemImage: "qrcode.viewfinder")
+                }
+            }
         }
     }
 }
