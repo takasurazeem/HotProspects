@@ -32,6 +32,7 @@
 		F99B4BE0288ED31D00598B53 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BDF288ED31D00598B53 /* Prospect.swift */; };
 		F99B4BE5288EECA800598B53 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = F99B4BE4288EECA800598B53 /* CodeScanner */; };
 		F99B4BE7288FF15F00598B53 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BE6288FF15F00598B53 /* ImageSaver.swift */; };
+		F99B4BE9289038B100598B53 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99B4BE8289038B000598B53 /* FileManager+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		F99B4BDD288EC7D700598B53 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		F99B4BDF288ED31D00598B53 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 		F99B4BE6288FF15F00598B53 /* ImageSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		F99B4BE8289038B000598B53 /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				F99B4BDD288EC7D700598B53 /* MeView.swift */,
 				F99B4BDF288ED31D00598B53 /* Prospect.swift */,
 				F99B4BE6288FF15F00598B53 /* ImageSaver.swift */,
+				F99B4BE8289038B000598B53 /* FileManager+Extension.swift */,
 				F99B4B8E288C6B5300598B53 /* Assets.xcassets */,
 				F99B4B90288C6B5300598B53 /* Preview Content */,
 			);
@@ -398,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F99B4BC3288E75A600598B53 /* DelayedUpdater.swift in Sources */,
+				F99B4BE9289038B100598B53 /* FileManager+Extension.swift in Sources */,
 				F99B4BCB288EAA0D00598B53 /* ImageInterpolationContentView.swift in Sources */,
 				F99B4BC8288E77D800598B53 /* ResultTypeContentView.swift in Sources */,
 				F99B4BC0288D25FA00598B53 /* TabViewLearning.swift in Sources */,

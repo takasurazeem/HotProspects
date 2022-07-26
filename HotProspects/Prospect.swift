@@ -16,15 +16,15 @@ class Prospect: Identifiable, Codable {
 
 @MainActor class Prospects: ObservableObject {
     @Published private(set) var people: [Prospect]
-    private let saveKey = "SavedData"
+    let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedData")
     
     init() {
-        if let data = UserDefaults.standard.data(forKey: saveKey),
-           let decoded = try? JSONDecoder().decode([Prospect].self, from: data) {
-            people = decoded
-            return
+        do {
+            let data = try Data(contentsOf: savePath)
+            people = try JSONDecoder().decode([Prospect].self, from: data)
+        } catch {
+            people = []
         }
-        self.people = []
     }
     
     func add(_ prospect: Prospect) {
@@ -39,8 +39,11 @@ class Prospect: Identifiable, Codable {
     }
     
     private func save() {
-        if let encoded = try? JSONEncoder().encode(people) {
-            UserDefaults.standard.set(encoded, forKey: saveKey)
+        do {
+            let data = try JSONEncoder().encode(people)
+            try data.write(to: savePath, options: [.atomic, .completeFileProtection])
+        } catch {
+            print("Unable to save data: \(error.localizedDescription)")
         }
     }
 }
